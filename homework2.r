@@ -11,8 +11,10 @@ output: html_document
 
 # Problem 1: Use the function summary() to obtain summary statistics for the Iris dataset 
 
-#```{r}
+```{r}
 str(iris)
+summary(iris)
+```
 #'data.frame':	150 obs. of  5 variables:
 #$ Sepal.Length: num  5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
 #$ Sepal.Width : num  3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
@@ -20,8 +22,6 @@ str(iris)
 #$ Petal.Width : num  0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...
 #$ Species     : Factor w/ 3 levels "setosa","versicolor",..: 1 1 1 1 1 1 1 1 1 1 ...
 #summary()
-#```
-summary(iris)
 #  Sepal.Length    Sepal.Width     Petal.Length    Petal.Width          Species  
 #Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100   setosa    :50  
 #1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300   versicolor:50  
@@ -37,9 +37,9 @@ summary(iris)
 
 # Problem 3: Draw a histogram for the variable "Sepal.Length"
 
-#```{r}
+```{r}
 hist(iris$Sepal.Length)
-#```
+```
 
 # Problem 4: Draw a scatter plot
 plot(x=iris$Sepal.Length,y=iris$Petal.Length)
